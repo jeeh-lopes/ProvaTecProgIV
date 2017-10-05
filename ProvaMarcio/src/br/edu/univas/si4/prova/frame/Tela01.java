@@ -1,6 +1,7 @@
 package br.edu.univas.si4.prova.frame;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -30,12 +31,7 @@ public class Tela01 extends JFrame {
 		addComponents();
 	}
 
-	private void setContentPane(){
-		panel = new JPanel();
-		BorderLayout borderLayout = new BorderLayout();
-		panel.setLayout(borderLayout);
-		this.setContentPane(panel);
-		
+	private void setContentPane(){	
 		panel = new JPanel();
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		panel.setLayout(gridBagLayout);
@@ -45,9 +41,15 @@ public class Tela01 extends JFrame {
 	private void addComponents(){
 		GridBagConstraints gbc = new GridBagConstraints();
 		
-		JPanel westPanel = new JPanel();
+		/*JPanel westPanel = new JPanel();
+		westPanel.setBackground(Color.gray);
 		westPanel.setPreferredSize(new Dimension(100, 0));
 		panel.add(westPanel, BorderLayout.WEST);
+		
+		JButton button1 = new JButton();
+		button1.setText("Botão 1");
+		panel.add(button1);
+		}*/
 		
 		JLabel nameLabel= new JLabel();
 		nameLabel.setText("Nome: ");
